@@ -1,7 +1,7 @@
+// ICM-2016
 
-
-
-//image preload
+// Take a look at the HTML file where some things have been
+// added for mobile viewing
 let myImage;
 var colors;
 var myImages;
@@ -22,11 +22,10 @@ function setup() {
   // Make the canvas the size of the mobile device screen
   createCanvas(windowWidth, windowHeight);
   background(0);
-  // An array of 7 image
   myImages = [myImage1, myImage2, myImage3, myImage4, myImage5, myImage6, myImage7,]
   myImage = random(myImages)
   image(myImage, 0, 0, windowWidth, windowHeight);
-  
+  // An array of five colors, one for each finger
   button = createButton('Change the maze');
   button.position(width/3 - width/6, height/12);
   button.size(width/3.2,height/15);
@@ -35,7 +34,7 @@ function setup() {
   buttonClear.position(3*(width/3 - width/6), height/12);
   buttonClear.size(width/3,height/15);
 }
-// A function for changing the image of maze randomly by pressing the button
+
 function changeImage() {
  
   let newImage;
